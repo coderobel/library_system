@@ -25,7 +25,7 @@ class Library():
 
     @track_access
     def borrow_item(self, item, user_id):
-        return f"Book '{item}' checked out by {user_id}"
+        return f"Book '{item.title}' checked out by {user_id}"
     @track_access 
     def return_item(self, item):
         return f"Book '{item}' returned"
